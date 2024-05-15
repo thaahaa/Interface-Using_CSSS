@@ -1,0 +1,39 @@
+/** Step one **/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(32, 99, 188);
+}
+/** Step two **/
+h1{
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 46px;
+    letter-spacing: 1.75px;
+    color: rgb(225, 255, 0);
+    text-align: center;
+
+}
+/** Step three **/
+
+
+h2,p,li,a{
+    font-family: "Briem Hand", sans-serif;
+    
+    color: rgb(246, 242, 9);
+    
+}
+/** Step four **/
+
+
+/** Step five **/
+p span{
+    color: rgb(177, 137, 85);
+}
+/** Step six **/
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-shadow: 4px 3px 4px rgb(232, 232, 76);
+}

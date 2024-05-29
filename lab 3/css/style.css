@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+    grid-template-rows: auto 1fr auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+header nav menu {
+    display: flex;
+    list-style: none;
+    
+}
+
+header nav menu li {
+    margin-left: 20px;
+}
+
+header nav menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.lesson-masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3d9d9;
+    padding: 20px;
+}
+
+.lesson-masthead div {
+    flex: 1;
+}
+
+.lesson-masthead h1 {
+    margin-bottom: 10px;
+}
+
+.lesson-masthead a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+main section div {
+    flex: 1;
+}
+
+main section img {
+    max-width: 100%;
+   
+}
+
+
+main section:last-child {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    
+    justify-content: center;
+}
+
+main section:last-child div {
+    flex: none;
+}
+
+
+aside {
+    grid-area: aside;
+    display: flex;
+    gap: 10px;
+}
+
+aside article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+aside article img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+aside article h4 {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer img {
+    max-width: 100px;
+}
+
+footer h6 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #666;
+}
